@@ -1,0 +1,36 @@
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class Test109 {
+
+	public static void main(String[] args) {
+		System.out.println(longSub("abcbbbbcccbdddadadc"));
+	}
+
+	private static String longSub(String str) {
+		char p1 = str.charAt(0);
+		char p2 = str.charAt(1);
+		int count = 0;
+		int lastCount = 0;
+		String result = "";
+		StringBuilder sb = new StringBuilder();
+		for(int i=0;i<str.length();i++){
+			if(str.charAt(i)==p1 || str.charAt(i)==p2){
+				count++;
+				sb.append(str.charAt(i));
+			}
+			else{
+				if(res.length()>sb.length())
+					result = sb.toString();
+				count=0;
+				sb.setLength(0);
+				p1=p2;
+				p2=str.charAt(i);
+			}
+		}
+		System.out.println(count);
+		System.out.println(lastCount);
+		return result;
+	}
+
+}

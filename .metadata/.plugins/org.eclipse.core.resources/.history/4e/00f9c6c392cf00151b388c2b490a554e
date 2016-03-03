@@ -1,0 +1,14 @@
+
+public class Test109 {
+
+	public static void main(String[] args) {
+		System.out.println(longSub("abcbbbbcccbdddadadc"));
+	}
+
+	private static void longSub(String str) {
+		char p1 = str.charAt(0);
+		char p2 = str
+		for(int i=0;i)
+	}
+
+}

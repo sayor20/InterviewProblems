@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class PascalTriangle {
+
+	public static void main(String[] args) {
+		System.out.println(generate(5));
+	}
+
+	private static ArrayList<ArrayList<Integer>> generate(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
